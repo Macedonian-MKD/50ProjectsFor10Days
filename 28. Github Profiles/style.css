@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2a2a72;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#form {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+}
+
+#form input {
+  background: #4c2885;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: block;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+#form input::placeholder {
+  color: #eee;
+}
+
+#form input:focus {
+  outline: none;
+}
+
+.card {
+  display: flex;
+  gap: 2rem;
+  color: #eee;
+  max-width: 800px;
+  background-color: #4c2885;
+  padding: 3rem;
+  margin: 0 1.35rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.card > div:first-of-type {
+  flex: 0 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.card .avatar {
+  height: 15rem;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  border: 10px solid #2a2a72;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h2 {
+  color: #eee;
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.user-info {
+  color: #eee;
+}
+
+.user-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 1.4rem;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.user-info ul li strong {
+  font-size: 1.4rem;
+}
+
+.user-info p {
+  font-size: 1.4rem;
+}
+
+#repos {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+#repos a:link,
+#repos a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #eee;
+  background-color: #2a2a72;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 58%;
+  }
+  #form {
+    padding: 1rem;
+    max-width: 400px;
+  }
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-info {
+    text-align: center;
+  }
+}
